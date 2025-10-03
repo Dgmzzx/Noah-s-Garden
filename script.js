@@ -61,36 +61,4 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-const contactForm = document.getElementById("contactForm")
-
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault()
-
-  // Get form values
-  const name = document.getElementById("name").value
-  const email = document.getElementById("email").value
-  const message = document.getElementById("message").value
-
-  // Create WhatsApp message
-  const whatsappMessage = `Hola! Soy ${name}
-
-📧 Correo: ${email}
-
-Mensaje:
-${message}`
-
-  // Encode message for URL
-  const encodedMessage = encodeURIComponent(whatsappMessage)
-
-  // Replace with your WhatsApp number (include country code without + or spaces)
-  const whatsappNumber = "1234567890"
-
-  // Open WhatsApp with pre-filled message
-  window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank")
-
-  // Reset form
-  contactForm.reset()
-
-  // Show success message (optional)
-  alert("Redirigiendo a WhatsApp...")
-})
+// The form will submit directly to FormSubmit.co via POST method
