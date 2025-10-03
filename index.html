@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah's Garden - Floristería</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#inicio" class="logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/503398191_17843760315505252_3495144373341016964_n-3OKwCmdNFRjJhkAg3nH8W9pmcNEHWB.jpg" alt="Noah's Garden" class="logo-img">
+                </a>
+
+                <nav class="nav-desktop">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#nosotros" class="nav-link">Nosotros</a>
+                    <a href="#arreglos" class="nav-link">Arreglos</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+
+                <a href="#ordenar" class="btn btn-primary desktop-only">Ordenar Ahora</a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <a href="#inicio" class="mobile-nav-link">Inicio</a>
+            <a href="#nosotros" class="mobile-nav-link">Nosotros</a>
+            <a href="#arreglos" class="mobile-nav-link">Arreglos</a>
+            <a href="#contacto" class="mobile-nav-link">Contacto</a>
+            <a href="#ordenar" class="btn btn-primary">Ordenar Ahora</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/503398191_17843760315505252_3495144373341016964_n-3OKwCmdNFRjJhkAg3nH8W9pmcNEHWB.jpg" alt="Noah's Garden" class="hero-logo-img">
+                </div>
+                <h1 class="hero-title">Flores que cuentan historias</h1>
+                <p class="hero-subtitle">Creamos arreglos florales únicos y personalizados para cada ocasión especial en tu vida</p>
+                <div class="hero-buttons">
+                    <a href="#arreglos" class="btn btn-primary btn-lg">Ver Arreglos</a>
+                    <a href="#ordenar" class="btn btn-outline btn-lg">Ordenar por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Noah's Garden</h2>
+                <p class="section-description">
+                    Somos una floristería dedicada a crear arreglos florales excepcionales que transmiten emociones y celebran
+                    los momentos más importantes de tu vida. Cada flor es seleccionada con cuidado y cada diseño es creado con
+                    pasión.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V9m-4.5 3a4.5 4.5 0 1 0 4.5 4.5M7.5 12H9m7.5 0a4.5 4.5 0 1 1-4.5 4.5m4.5-4.5H15m-3 4.5V15"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Flores Frescas</h3>
+                    <p class="feature-description">Seleccionamos las flores más frescas y hermosas para cada arreglo</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Diseño Personalizado</h3>
+                    <p class="feature-description">Cada arreglo es único y diseñado especialmente para ti</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                            <path d="M5 3v4"/>
+                            <path d="M19 17v4"/>
+                            <path d="M3 5h4"/>
+                            <path d="M17 19h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Atención al Detalle</h3>
+                    <p class="feature-description">Cuidamos cada detalle para crear momentos inolvidables</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="arreglos" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Arreglos Florales</h2>
+                <p class="section-description">
+                    Explora nuestra colección de arreglos florales cuidadosamente diseñados para cada ocasión especial
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Ramo Romántico">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Ramo Romántico</h3>
+                        <p class="gallery-description">Rosas y peonías en tonos suaves</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Arreglo Tropical">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Arreglo Tropical</h3>
+                        <p class="gallery-description">Flores exóticas vibrantes</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Elegancia Clásica">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Elegancia Clásica</h3>
+                        <p class="gallery-description">Lirios y orquídeas blancas</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Jardín Silvestre">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Jardín Silvestre</h3>
+                        <p class="gallery-description">Flores de campo naturales</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Pasión Roja">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Pasión Roja</h3>
+                        <p class="gallery-description">Rosas rojas premium</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <div class="gallery-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Primavera Fresca">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Primavera Fresca</h3>
+                        <p class="gallery-description">Tulipanes y flores de temporada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="ordenar" class="order">
+        <div class="container">
+            <div class="order-card">
+                <div class="order-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        <circle cx="9" cy="10" r="1"/>
+                        <circle cx="15" cy="10" r="1"/>
+                    </svg>
+                </div>
+                <h2 class="order-title">¿Listo para ordenar?</h2>
+                <p class="order-description">
+                    Contáctanos por WhatsApp y cuéntanos sobre tu ocasión especial. Crearemos el arreglo perfecto para ti.
+                </p>
+                <div class="order-buttons">
+                    <a href="https://wa.me/1234567890?text=Hola!%20Me%20gustar%C3%ADa%20ordenar%20un%20arreglo%20floral%20de%20Noah's%20Garden" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        Ordenar por WhatsApp
+                    </a>
+                    <a href="tel:1234567890" class="btn btn-outline btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        Llamar Ahora
+                    </a>
+                </div>
+                <p class="order-hours">Horario de atención: Lunes a Sábado, 9:00 AM - 7:00 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <!-- Simplified contact form with only name, email, and message -->
+            <div class="contact-form-section">
+                <div class="section-header">
+                    <h2 class="section-title">Contáctanos</h2>
+                    <p class="section-description">
+                        Envíanos un mensaje y nos pondremos en contacto contigo lo antes posible
+                    </p>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" class="form-input form-textarea" placeholder="Cuéntanos sobre tu ocasión especial..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg form-submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m22 2-7 20-4-9-9-4Z"/>
+                            <path d="M22 2 11 13"/>
+                        </svg>
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#inicio">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/503398191_17843760315505252_3495144373341016964_n-3OKwCmdNFRjJhkAg3nH8W9pmcNEHWB.jpg" alt="Noah's Garden" class="footer-logo">
+                    </a>
+                    <p class="footer-text">Creando momentos inolvidables con flores excepcionales</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contacto</h3>
+                    <div class="footer-info">
+                        <div class="footer-info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <p>Dirección de la floristería<br>Ciudad, País</p>
+                        </div>
+                        <div class="footer-info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2" ry="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                            <a href="mailto:info@noahsgarden.com">info@noahsgarden.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <h3 class="footer-title">Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/noahsgarden" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/noahsgarden" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="social-text">Comparte tus momentos especiales con #NoahsGarden</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Noah's Garden. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
